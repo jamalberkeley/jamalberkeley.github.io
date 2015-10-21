@@ -8,13 +8,89 @@
     <link rel="canonical" href="index.html">
 
     <style class="cp-pen-styles">
+        @-webkit-keyframes title {
+          0% { opacity: 0; right: 130px; }
+          48% { opacity: 0; right: 130px; }
+          52% { opacity: 1; right: 30px; }
+          70% { opacity: 0; right: 30px; }
+          100% { opacity: 0; right: 30px; }
+        }
 
+        @-moz-keyframes title {
+          0% { opacity: 0; right: 130px; }
+          48% { opacity: 0; right: 130px; }
+          52% { opacity: 1; right: 30px; }
+          78% { opacity: 0; right: 30px; }
+          100% { opacity: 0; right: 30px; }
+        }
+        @-webkit-keyframes fade {
+          0% { opacity: 1; }
+          100% { opacity: 0; }
+        }
+        @-moz-keyframes fade {
+          0% { opacity: 1; }
+          100% { opacity: 0; }
+        }
+        @-webkit-keyframes bg {
+          0% { background-color: #306f99; }
+          50% { background-color: #19470f; }
+          90% { background-color: #734a10; }
+        }
         @-moz-keyframes bg {
           0% { background-color: #306f99; }
           50% { background-color: #19470f; }
           90% { background-color: #734a10; }
         }
-
+        @-webkit-keyframes blink {
+          0% { opacity: 0; }
+          5% { opacity: 1; }
+          10% { opacity: 0; }
+          15% { opacity: 1; }
+          20% { opacity: 0; }
+          25% { opacity: 1; }
+          30% { opacity: 0; }
+          35% { opacity: 1; }
+          40% { opacity: 0; right: -21px; }
+          45% { opacity: 1; right: 80px; }
+          50% { opacity: 0; right: -21px; }
+          51% { right: -21px; }
+          55% { opacity: 1; }
+          60% { opacity: 0; }
+          65% { opacity: 1; }
+          70% { opacity: 0; }
+          75% { opacity: 1; }
+          80% { opacity: 0; }
+          85% { opacity: 1; }
+          90% { opacity: 0; right: -21px; }
+          95% { opacity: 1; right: 80px; }
+          96% { right: -21px; }
+          100% { opacity: 0; right: -21px; }
+        }
+        @-moz-keyframes blink {
+          0% { opacity: 0; }
+          5% { opacity: 1; }
+          10% { opacity: 0; }
+          15% { opacity: 1; }
+          20% { opacity: 0; }
+          25% { opacity: 1; }
+          30% { opacity: 0; }
+          35% { opacity: 1; }
+          40% { opacity: 0; right: -21px; }
+          45% { opacity: 1; right: 80px; }
+          50% { opacity: 0; right: -21px; }
+          51% { right: -21px; }
+          55% { opacity: 1; }
+          60% { opacity: 0; }
+          65% { opacity: 1; }
+          70% { opacity: 0; }
+          75% { opacity: 1; }
+          80% { opacity: 0; }
+          85% { opacity: 1; }
+          90% { opacity: 0; right: -21px; }
+          95% { opacity: 1; right: 80px; }
+          96% { right: -21px; }
+          100% { opacity: 0; right: -21px; }
+        }
         body {
           font-family: HelveticaNeue, Roboto, arial;
           background: black;
@@ -98,12 +174,10 @@
       <div class="wrap">
         <div class="bg">
           <div class="loading">
-            <a href="webfonts.html">Mobile Web Fonts</a>
-             </br>
-            <a href="loader.html">Mobile Web Pre-Loader Animation</a>
-             </br>
-            <a href="spinner.html">Mobile Web Spinner Animation</a>
-             </br>
+            <span class="title">loading<br> amazing deals</span>
+            <span class="tip1">sorting by<br>deals and delight</span>
+            <span class="tip2">picking out<br>our favorite deals</span>
+            <span class="tip3">inspiring<br>spontaneous travel</span>
           </div>
           <div class="divider">
             <span class="brand"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAI9JREFUeNrs1rsNgzAUQFEnYjBYJ1U2sL1BKtbJaAklQhZCosGPc0rLzZW/KQEAAADhPbYDr3f5bsfmT5miBA+NsTHyCj/vtqUFCxYsWLBgwdf6Wv4a82rPkcvXuOx9LVty5wtbnGHBQR09wz1dWvl08PqWu7rllcm2tGDBggVHeodr5001AQAAANzKX4ABAJ5BEHsMf+goAAAAAElFTkSuQmCC"></span>
