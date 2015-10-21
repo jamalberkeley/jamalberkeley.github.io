@@ -8,7 +8,7 @@
     <link rel="canonical" href="index.html">
 
     <style class="cp-pen-styles">
-        @-webkit-keyframes title {
+        @-webkit-keyframes rotate {
           0% { opacity: 0; right: 130px; }
           48% { opacity: 0; right: 130px; }
           52% { opacity: 1; right: 30px; }
@@ -16,81 +16,7 @@
           100% { opacity: 0; right: 30px; }
         }
 
-        @-moz-keyframes title {
-          0% { opacity: 0; right: 130px; }
-          48% { opacity: 0; right: 130px; }
-          52% { opacity: 1; right: 30px; }
-          78% { opacity: 0; right: 30px; }
-          100% { opacity: 0; right: 30px; }
-        }
-        @-webkit-keyframes fade {
-          0% { opacity: 1; }
-          100% { opacity: 0; }
-        }
-        @-moz-keyframes fade {
-          0% { opacity: 1; }
-          100% { opacity: 0; }
-        }
-        @-webkit-keyframes bg {
-          0% { background-color: #306f99; }
-          50% { background-color: #19470f; }
-          90% { background-color: #734a10; }
-        }
-        @-moz-keyframes bg {
-          0% { background-color: #306f99; }
-          50% { background-color: #19470f; }
-          90% { background-color: #734a10; }
-        }
-        @-webkit-keyframes blink {
-          0% { opacity: 0; }
-          5% { opacity: 1; }
-          10% { opacity: 0; }
-          15% { opacity: 1; }
-          20% { opacity: 0; }
-          25% { opacity: 1; }
-          30% { opacity: 0; }
-          35% { opacity: 1; }
-          40% { opacity: 0; right: -21px; }
-          45% { opacity: 1; right: 80px; }
-          50% { opacity: 0; right: -21px; }
-          51% { right: -21px; }
-          55% { opacity: 1; }
-          60% { opacity: 0; }
-          65% { opacity: 1; }
-          70% { opacity: 0; }
-          75% { opacity: 1; }
-          80% { opacity: 0; }
-          85% { opacity: 1; }
-          90% { opacity: 0; right: -21px; }
-          95% { opacity: 1; right: 80px; }
-          96% { right: -21px; }
-          100% { opacity: 0; right: -21px; }
-        }
-        @-moz-keyframes blink {
-          0% { opacity: 0; }
-          5% { opacity: 1; }
-          10% { opacity: 0; }
-          15% { opacity: 1; }
-          20% { opacity: 0; }
-          25% { opacity: 1; }
-          30% { opacity: 0; }
-          35% { opacity: 1; }
-          40% { opacity: 0; right: -21px; }
-          45% { opacity: 1; right: 80px; }
-          50% { opacity: 0; right: -21px; }
-          51% { right: -21px; }
-          55% { opacity: 1; }
-          60% { opacity: 0; }
-          65% { opacity: 1; }
-          70% { opacity: 0; }
-          75% { opacity: 1; }
-          80% { opacity: 0; }
-          85% { opacity: 1; }
-          90% { opacity: 0; right: -21px; }
-          95% { opacity: 1; right: 80px; }
-          96% { right: -21px; }
-          100% { opacity: 0; right: -21px; }
-        }
+
         body {
           font-family: HelveticaNeue, Roboto, arial;
           background: black;
@@ -117,38 +43,6 @@
           text-align: right;
           height: 20px;
           width: 210px;
-        }
-        .loading span {
-          display: block;
-          text-transform: uppercase;
-          position: absolute;
-          right: 30px;
-          height: 20px;
-          width: 200px;
-          line-height: 20px;
-        }
-        .loading span.title {
-          -moz-animation: title 6.4s linear infinite;
-          -webkit-animation: title 6.4s linear infinite;
-          animation: title 6.4s linear infinite;
-        }
-        .loading span.tip1 {
-          -moz-animation: title 6.4s linear 1.7s infinite;
-          -webkit-animation: title 6.4s linear 1.7s infinite;
-          animation: title 6.4s linear 1.7s infinite;
-          opacity: 0;
-        }
-        .loading span.tip2 {
-          -moz-animation: title 6.4s linear 3.4s infinite;
-          -webkit-animation: title 6.4s linear 3.4s infinite;
-          animation: title 6.4s linear 3.4s infinite;
-          opacity: 0;
-        }
-        .loading span.tip3 {
-          -moz-animation: title 6.4s linear 5.1s infinite;
-          -webkit-animation: title 6.4s linear 5.1s infinite;
-          animation: title 6.4s linear 5.1s infinite;
-          opacity: 0;
         }
 
         .divider {
